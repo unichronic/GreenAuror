@@ -1,0 +1,515 @@
+/* General Reset */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1d3557;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+/* Logo */
+.logo img {
+    width: 200px;
+    height: 175px; /* Adjust the height as needed for your logo size */
+    overflow: hidden;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a8dadc;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 100px;
+        width: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Donate Button Highlight */
+.donate-button {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #21867a;
+}
+
+/* General Carousel Styling */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 100px); /* Full page minus navbar height */
+    color: #fff;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    z-index: 1; /* Ensure this stays below buttons */
+    pointer-events: none; /* Prevent overlay from blocking clicks */
+}
+
+/* Text and Button Content */
+.carousel-content {
+    max-width: 500px;
+    margin-left: 5%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.carousel-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.carousel-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1d3557;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.button:hover {
+    background-color: #457b9d;
+}
+
+.yellow-button {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.yellow-button:hover {
+    background-color: #e0a800;
+}
+
+/* Carousel Dots */
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #1d3557;
+}
+
+
+/* Section Header */
+.our-campaigns {
+    padding: 50px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.our-campaigns h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1d3557;
+}
+
+/* Container and Card Layout */
+.campaign-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.campaign-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 27%;
+    overflow: hidden;
+    transition: transform 1.0s ease;
+}
+
+.campaign-card:hover {
+    transform: translateY(-10px);
+}
+
+.campaign-card img {
+    width: 100%;
+    height: 200px; /* Set the height to a fixed value */
+    object-fit: cover; /* Ensures the image is cropped proportionally */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #1d3557;
+    margin: 20px 0 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.campaign-card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d3557;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-content .button:hover {
+    background-color: #457b9d;
+}
+
+/* Popular Stories Section */
+#popular-stories {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#popular-stories .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#popular-stories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Stories Wrapper - enables horizontal scroll */
+.stories-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-bottom: 20px; /* To avoid overlap with the button */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide the scrollbar */
+.stories-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Each story column */
+.story {
+    width: 22%; /* Ensure only 4 stories are visible at once */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 15px;
+}
+
+.story img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.story h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0 10px;
+}
+
+.story .story-summary {
+    padding: 0 10px 10px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Carousel buttons (previous & next) */
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Changed from absolute to relative */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure the buttons are above other content */
+    padding: 0 20px; /* Space the buttons from the edges */
+    margin-top: 10px; /* Adjust to ensure they appear below the images */
+}
+
+.carousel-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.carousel-buttons button:hover {
+    background-color: #3e8e41;
+}
+
+#prev-btn {
+    margin-left: 10px; /* Ensure left button is spaced properly */
+}
+
+#next-btn {
+    margin-right: 10px; /* Ensure right button is spaced properly */
+}
+
+
+/* Our Values Section */
+#our-values {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+#our-values h2 {
+    font-size: 2.5rem;
+    color: #1d3557;
+    margin-bottom: 30px;
+}
+
+.values-columns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.values-column {
+    width: 20%;
+    background-color: #ffffff00;
+    padding: 20px;
+    text-align: left;
+}
+
+.values-column h3 {
+    font-size: 1.6rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.values-column p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2a9d8f;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #2a9d8f; /* Green underline */
+    padding-right: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #21867a;
+    border-color: #21867a; /* Darker green on hover */
+    background-color: #e9f7f2; /* Light green background for highlight effect */
+    border-radius: 3px; /* Optional: Adds a small radius for the background */
+}
+
+/* Footer Section */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+#footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-content p,
+.footer-content ul {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #a5d6a7;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #81c784;
+    text-decoration: underline;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #a5d6a7;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #81c784;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        align-items: center;
+    }
+}

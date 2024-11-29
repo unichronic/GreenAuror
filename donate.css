@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Page Header Section */
+header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Donation Banner Section */
+.donate-banner {
+    text-align: center;
+    background: #66cc00;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.donate-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.donate-text p {
+    font-size: 18px;
+}
+
+.cta-donate-btn {
+    padding: 10px 45px;
+    background: rgba(102,204,0,.9);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta-donate-btn:hover {
+    background: #55b000;
+}
+
+/* Donation Form Section */
+.donation-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.left {
+    flex: 1;
+}
+
+.donation-info {
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 80%;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #66cc00;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 80%;
+}
+
+form button:hover {
+    background: #55b000;
+}
+
+.right img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Our Focus Section */
+.our-focus {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.our-focus h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.focus-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.focus-item {
+    flex: 1;
+    text-align: center;
+}
+
+.focus-item img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.focus-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.focus-item p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f5f5f5;
+    border-top: 2px solid #ddd;
+    font-size: 14px;
+}

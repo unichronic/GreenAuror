@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaperaccess.com/full/437922.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1d3557;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+
+}
+
+/* Logo */
+.logo img {
+    width: 200px;
+    height: 175px; /* Adjust the height as needed for your logo size */
+    overflow: hidden;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a8dadc;
+}
+
+/* Donate Button Highlight */
+.donate-button {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #21867a;
+}
+
+/* Main Content */
+.main-content {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Box Container */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Large Box */
+.large-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    color: black;
+    width: 90%; /* Increase width to 80% */
+    /*max-width: 900px; /* Optional max width for large box */
+    margin: 10px 0px;
+    margin-left: 20px;
+}
+
+/* Box Row (for two smaller boxes) */
+.box-row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Ensure the smaller boxes fit inside the large box width */
+    /*max-width: 900px; /* Match max-width of the larger box */
+    gap: 20px;
+}
+
+/* Placeholder and Form Box Styling */
+.small-box {
+    background: rgba(255, 255, 255, 0.8); /* Light background for boxes */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    color: #1b1a1d;
+}
+
+/* Placeholder Box (60% width) */
+.placeholder-box {
+    flex: 0 0 60%; /* 60% width of the row */
+    padding: 5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form Box (40% width) */
+.form-box {
+    flex: 0 0 40%; /* 40% width of the row */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+#petitionForm{
+    align-items: center;
+}
+
+input, button {
+    width: 80%; /* Make inputs and button fill the container */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff782a;
+}
+
+/* Terms and Conditions Styling */
+.terms {
+    font-size: 12px;
+    color: gray;
+    text-align: center; /* Align text to the left for better readability */
+}
+
+/* User Count Styling */
+.user-count {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #5d00ff;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
