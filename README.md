@@ -43,7 +43,7 @@ Follow these steps to get the project up and running on your local machine:
    ```
 4. Set up environment variables by creating a `.env` file in the root directory:
    ```env
-   MONGO_URI=your_mongo_connection_string
+   MONGO_URI=
    PORT=3000
    ```
 5. Start the development server:
@@ -57,20 +57,9 @@ The application will be live at `http://localhost:3000`.
 
 We welcome contributions! Check out our [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
-## 👥 Contributors
-
-A huge thanks to all our contributors:
-[![Contributors](https://contrib.rocks/image?repo=Unichronic/GreenAuror)](https://github.com/Unichronic/GreenAuror/graphs/contributors)
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 📫 Contact
 
 For any queries or suggestions, feel free to reach out:
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Website: [GreenAuror](https://green-auror.example.com)
+- Email: [your-email@example.com](mailto:ishuvam.pal@gmail.com)
 
----
 
