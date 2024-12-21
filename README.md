@@ -60,6 +60,6 @@ We welcome contributions! Check out our [CONTRIBUTING.md](CONTRIBUTING.md) to ge
 ## 📫 Contact
 
 For any queries or suggestions, feel free to reach out:
-- Email: [](mailto:ishuvam.pal@gmail.com)
+- Email [here](mailto:ishuvam.pal@gmail.com)
 
 
